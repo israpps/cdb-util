@@ -14,8 +14,8 @@
 #include <stdio.h>
 #include "cheatlist.h"
 
-char parse_error_text[256];
-int parse_error_line;
+extern char parse_error_text[256];
+extern int parse_error_line;
 
 int parse_stream(gamelist_t *list, FILE *stream);
 int parse_buf(gamelist_t *list, const char *buf);
